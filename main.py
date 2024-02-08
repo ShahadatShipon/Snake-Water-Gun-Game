@@ -1,4 +1,6 @@
-import random,playsound
+import playsound
+import secrets
+
 def win_music():
     """This function is for play winning music"""
     playsound.playsound("win.mp3")
@@ -18,7 +20,7 @@ my_point=0
 com_point=0
 while(attempts<10):
     list=["s","w","g"]
-    rand=random.choice(list)
+    rand=secrets.SystemRandom().choice(list)
     print("Choose 1 Between Theese Three....\n s(Snake)\n w(Water)\n g(Gun)\n")
     my_choice=input("Enter Your Choice : \n")
     if my_choice == rand:
