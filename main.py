@@ -20,8 +20,7 @@ while(attempts<10):
     list=["s","w","g"]
     rand=random.choice(list)
     print("Choose 1 Between Theese Three....\n s(Snake)\n w(Water)\n g(Gun)\n")
-    my_choice=input("Enter Your Choice : \n")
-    if my_choice == rand:
+    if (my_choice := input("Enter Your Choice : \n")) == rand:
         print(f"Your choice is {my_choice} and Computer's Choice is {rand}")
         print("This round is Draw")
         draw_music()
